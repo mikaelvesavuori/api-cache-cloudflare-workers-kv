@@ -1,0 +1,15 @@
+# Rename this file to wrangler.toml
+# Set empty fields with your own data
+# Set "name" per function, so something like "api-cache-list", "api-cache-get", and "api-cache-delete"
+
+type = "webpack"
+name = ""
+account_id = ""
+zone_id = ""
+# route = "domain.tld/*"
+workers_dev = true
+webpack_config = "webpack.config.js"
+
+kv-namespaces = [
+	{ binding = "", id = "" }
+]

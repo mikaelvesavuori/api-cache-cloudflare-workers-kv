@@ -1,0 +1,14 @@
+{
+  "name": "api-cache-cloudflare-workers-kv",
+  "version": "1.0.0",
+  "description": "This repository contains a rudimentary cache suitable for APIs or similar endpoints.",
+  "main": "index.js",
+  "author": "Mikael Vesavuori",
+  "license": "ISC",
+  "scripts": {
+    "deploy": "npm run deploy:delete && npm run deploy:get && npm run deploy:list",
+    "deploy:delete": "cd delete && wrangler publish && cd ..",
+    "deploy:get": "cd get && wrangler publish && cd ..",
+    "deploy:list": "cd list && wrangler publish && cd .."
+  }
+}
